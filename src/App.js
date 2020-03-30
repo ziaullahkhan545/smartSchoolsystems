@@ -4,7 +4,7 @@ class App extends Component {
   render(){
     return(
       <div>
-        <h1>Smart School WebSite</h1>
+        <h1>Websites for Smart School</h1>
       </div>
     )
   }
