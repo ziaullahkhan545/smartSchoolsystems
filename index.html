@@ -9,8 +9,8 @@
 
 <body>
 <header>
-<nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top">
-<div class="container">
+<nav class="navbar navbar-b navbar-trans navbar-expand-lg fixed-top"  id="nav_bar">
+<div class="container abc  shadow"  id="cont">
   <a class="navbar-brand" href="#">Brand Name</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -19,24 +19,28 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link abc" href="#">Home </a>
+        <a class="nav-link pr-3" href="#">Home </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link abc" href="#">Link</a>
+        <a class="nav-link pr-3 " href="#">News</a>
       </li>
-            <li class="nav-item">
-        <a class="nav-link abc" href="#">Link</a>
+        <li class="nav-item">
+        <a class="nav-link  pr-3" href="#">Events</a>
       </li>
-            <li class="nav-item">
-        <a class="nav-link abc" href="#">Link</a>
+       <li class="nav-item">
+        <a class="nav-link pr-3" href="#">About</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link pr-3" href="#">Contact</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
+          Login
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">ABC</a>
-          <a class="dropdown-item" href="#">XYZ</a>
+          <a class="dropdown-item" href="#">Principal</a>
+          <a class="dropdown-item" href="#">Faculty</a>
+          <a class="dropdown-item" href="#">Students</a>
         </div>
       </li>
     </ul>
@@ -53,24 +57,25 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <div class="banner" style="background-image: url(images/1.png);"></div>
+      <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)),  url(images/1.png); "></div>
       <div class="carousel-caption  d-lg-block">
         <h1>First slide label</h1>
         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
       </div>
     </div>
     <div class="carousel-item">
-      <div class="banner" style="background-image: url(images/2.png);"></div>
+      <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),  url(images/2.png); " class="img-responsive"></div>
       <div class="carousel-caption d-lg-block">
         <h1>Second slide label</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
     </div>
     <div class="carousel-item">
-      <div class="banner" style="background-image: url(images/3.jpg);"></div>
+      <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)),  url(images/3.png); "></div>
       <div class="carousel-caption d-lg-block">
         <h1>Third slide label</h1>
         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        <button class="btn bg-white">Learn More</button>
       </div>
     </div>
   </div>
@@ -86,6 +91,117 @@
 
 
 </header>
+
+
+<br /><br /><br /><br />
+
+<!-- Footer -->
+<footer class="page-footer font-small blue pt-4 abc">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase">Footer Content</h5>
+        <p>Here you can use rows and columns to organize your footer content.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Link 1</a>
+          </li>
+          <li>
+            <a href="#!">Link 2</a>
+          </li>
+          <li>
+            <a href="#!">Link 3</a>
+          </li>
+          <li>
+            <a href="#!">Link 4</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Link 1</a>
+          </li>
+          <li>
+            <a href="#!">Link 2</a>
+          </li>
+          <li>
+            <a href="#!">Link 3</a>
+          </li>
+          <li>
+            <a href="#!">Link 4</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+
+  <!-- Copyright -->
+
+</footer>
+  <!-- Copyright -->
+  <div class="container-fluid footercolor">
+      <div class="container footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+  </div>
+</div>
+<!-- Footer -->
+
+
+<script>
+  window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  if (document.body.scrollTop > 550 || document.documentElement.scrollTop > 550) 
+  {
+    document.getElementById("cont").classList.remove("abc", "shadow");
+    document.getElementById("nav_bar").classList.remove("navbar-trans");
+    document.getElementById("cont").classList.add("solid_navbar");
+    document.getElementById("nav_bar").classList.add("solid_navbar");
+  }
+  else {
+    document.getElementById("cont").classList.add("abc", "shadow");
+    document.getElementById("nav_bar").classList.add("navbar-trans");
+    document.getElementById("cont").classList.remove("solid_navbar");
+    document.getElementById("nav_bar").classList.remove("solid_navbar");
+  }
+}
+</script>
 
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
